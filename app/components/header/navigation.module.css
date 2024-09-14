@@ -1,0 +1,10 @@
+.navigation_div {
+  @apply grid grid-cols-3 gap-8 px-4
+  /* border-2 border-red-300; */;
+}
+
+.nav_items {
+  @apply text-center self-center
+  /* border-2
+  border-green-300   */;
+}

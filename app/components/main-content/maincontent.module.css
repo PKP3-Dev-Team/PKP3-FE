@@ -1,0 +1,3 @@
+.main {
+  @apply flex-grow overflow-y-auto;
+}
