@@ -1,5 +1,5 @@
 .navigation_div {
-  @apply grid grid-cols-3 gap-8 px-4
+  @apply grid gap-8 px-4 grid-flow-col auto-cols-auto
   /* border-2 border-red-300; */;
 }
 

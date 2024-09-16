@@ -16,9 +16,9 @@ export default () => {
             <Image
               src={imagePath}
               alt={"Photo"}
-              width={100}
-              height={200}
-              // sizes="200vh"
+              className="aspect-[2/3] h-fit w-fit object-cover"
+              width={200}
+              height={300}
             />
           ))}
         </div>
