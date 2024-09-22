@@ -6,7 +6,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 const imagePaths = ["/image1.jfif", "/image2.jfif"];
 
-export default () => {
+export default function Gallery() {
   return (
     <main className="min-h-screen flex flex-col">
       <Header />
@@ -14,6 +14,7 @@ export default () => {
         <div className="flex w-max space-x-4 p-4">
           {imagePaths.map((imagePath) => (
             <Image
+              key={imagePath}
               src={imagePath}
               alt={"Photo"}
               className="aspect-[2/3] h-fit w-fit object-cover"
@@ -29,4 +30,4 @@ export default () => {
       <Footer />
     </main>
   );
-};
+}

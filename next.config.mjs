@@ -1,5 +1,5 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   experimental: {
     // You may not need this, it's just to support moduleResolution: 'node16'
     extensionAlias: {
