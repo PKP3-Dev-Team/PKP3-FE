@@ -1,11 +1,10 @@
 .header_div {
-  @apply flex justify-between p-3 w-full
-   absolute opacity-80 z-10 bg-white
-   /* bg-gray-300; */;
+  @apply flex justify-between p-3 w-full bg-[#01002F] text-white;
+  /* absolute opacity-80 z-10 bg-white */
 }
 .organization {
   @apply flex gap-4 justify-center items-center;
 }
 .organization_name {
-  /* @apply bold; */
+  @apply font-semibold;
 }

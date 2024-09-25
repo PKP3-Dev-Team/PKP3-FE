@@ -1,3 +1,12 @@
 .footer_div {
-  @apply flex justify-between bg-cyan-400 min-h-24 items-center p-4;
+  @apply flex justify-between text-white bg-[#01002F] min-h-24 items-center p-8;
+}
+.footer_left {
+  @apply flex gap-6;
+}
+.top {
+  @apply flex items-center justify-center gap-4;
+}
+.top_button {
+  @apply font-bold;
 }

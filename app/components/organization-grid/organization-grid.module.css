@@ -1,0 +1,6 @@
+.organization_grid {
+  @apply grid grid-cols-5 grid-rows-2 items-center px-8 py-8 gap-y-4;
+}
+.link {
+  @apply flex justify-center items-center;
+}
