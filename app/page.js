@@ -1,31 +1,19 @@
 import Image from "next/image";
-
-import { Header } from "./components/header/Header";
+import { Banner } from "./components/banner/Banner";
 import { Footer } from "./components/footer/Footer";
+import { Header } from "./components/header/Header";
 import { OrganizationGrid } from "./components/organization-grid/OrganizationGrid";
 import { organizations } from "@/public/constants";
+
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
-      <div className="relative">
-        <Header />
-        <div className="relative">
-          <Image
-            src="/editedIMG_0385.jpeg"
-            alt="pkp3 event"
-            layout="responsive"
-            width={800}
-            height={600}
-            // sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
-          />
-          <div className="absolute bottom-4 right-4 bg-white bg-opacity-70 p-6 rounded-lg text-2xl">
-            "Palliative care is for everyone."
-          </div>
-        </div>
-      </div>
-      <div className="text-justify px-60 py-8 flex-grow overflow-y-auto text-xl">
+      <Header />
+      <Banner src="/editedIMG_0385.jpeg" alt="pkp3 event" />
+
+      <div className={styles.main_content}>
         <div>
           Persatuan Kerjasama Paliatif Pulau Pinang (PKP3) was established in
           April 2023 as a platform for palliative care providers in Penang to

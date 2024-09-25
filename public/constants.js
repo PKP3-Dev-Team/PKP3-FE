@@ -1,3 +1,8 @@
+export const pkp3FacebookLink =
+  "https://www.facebook.com/profile.php?id=100092708126046";
+export const pkp3Email = "mailto:kerjasama.paliatif@gmail.com";
+export const drLiangYikEmail = "mailto:liangyik@gmail.com";
+
 export const organizations = [
   {
     title: "Charis Hospice",

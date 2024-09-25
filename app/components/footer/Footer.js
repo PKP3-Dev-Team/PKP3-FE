@@ -7,19 +7,25 @@ import { UpArrowIcon } from "@/public/icons";
 export const Footer = () => {
   return (
     <div className={styles.footer_div}>
-      <div>
-        <ul>
+      <ul className={styles.footer_directory}>
+        <div>
           <li>
             <Link href="./about-us">About Us</Link>
           </li>
           <li>
             <Link href="./what-we-do">What We Do</Link>
           </li>
+        </div>
+
+        <div>
+          <li>
+            <Link href="./gallery">Gallery</Link>
+          </li>
           <li>
             <Link href="./contact-us">Contact Us</Link>
           </li>
-        </ul>
-      </div>
+        </div>
+      </ul>
 
       <button
         className={styles.top}

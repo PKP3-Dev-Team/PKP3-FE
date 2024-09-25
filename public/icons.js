@@ -3,14 +3,11 @@
 // icons should take in link and color props
 // when copying svg from streamlinehq, adjust the size to be 14px, and copy as jsx
 // within svg, add className={styles.icons}
-
-import styles from "./icons.module.css";
-
-export const EmailIcon = ({ link, color }) => {
+export const EmailIcon = ({ link, color, style }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <svg
-        className={styles.icons}
+        className={style}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 14 14"
@@ -33,11 +30,11 @@ export const EmailIcon = ({ link, color }) => {
   );
 };
 
-export const FacebookIcon = ({ link, color }) => {
+export const FacebookIcon = ({ link, color, style }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <svg
-        className={styles.icons}
+        className={style}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 14 14"
@@ -56,11 +53,11 @@ export const FacebookIcon = ({ link, color }) => {
   );
 };
 
-export const InstagramIcon = ({ link, color }) => {
+export const InstagramIcon = ({ link, color, style }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <svg
-        className={styles.icons}
+        className={style}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 14 14"
@@ -83,11 +80,11 @@ export const InstagramIcon = ({ link, color }) => {
   );
 };
 
-export const UpArrowIcon = ({ link, color }) => {
+export const UpArrowIcon = ({ link, color, style }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <svg
-        className={styles.icons}
+        className={style}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 14 14"

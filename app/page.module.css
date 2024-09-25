@@ -1,0 +1,3 @@
+.main_content {
+  @apply flex-grow overflow-y-auto px-60 py-8 text-xl text-justify;
+}
