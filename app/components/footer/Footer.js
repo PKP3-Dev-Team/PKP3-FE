@@ -27,12 +27,13 @@ export const Footer = () => {
         </div>
       </ul>
 
-      <button
+      {/* <button
         className={styles.top}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
         <UpArrowIcon color="#ffffff" />
         <span className={styles.top_button}>BACK TO TOP</span>
-      </button>
+      </button> */}
+      <p>&copy; Pusat Kerjasama Paliatif Pulau Pinang</p>
 
       <SocMed />
     </div>

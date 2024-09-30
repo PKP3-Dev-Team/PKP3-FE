@@ -11,7 +11,11 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Header />
-      <Banner src="/editedIMG_0385.jpeg" alt="pkp3 event" />
+      <Banner
+        src="/editedIMG_0385.jpeg"
+        alt="pkp3 event"
+        tagPosition={"bottom-4 right-4"}
+      />
 
       <div className={styles.main_content}>
         <div>
@@ -22,20 +26,26 @@ export default function Home() {
           aim to advocate about issues related to palliative care.
         </div>
         <div className="grid grid-cols-2 gap-8 py-8">
-          <Image
-            src="/palliative care 1.png"
-            alt="Palliative Care Stock Image 1"
-            height={400}
-            width={400}
-            style={{ width: "100%", height: "auto" }}
-          />
-          <Image
-            src="/palliative care 2.png"
-            alt="Palliative Care Stock Image 2"
-            height={400}
-            width={400}
-            style={{ width: "100%", height: "auto" }}
-          />
+          <div className="relative">
+            <Image
+              src="/palliative care 1.png"
+              alt="Palliative Care Stock Image 1"
+              height={400}
+              width={400}
+              style={{ width: "100%", height: "auto" }}
+            />
+            <div className={styles.freepik}>Designed by Freepik</div>
+          </div>
+          <div className="relative">
+            <Image
+              src="/palliative care 2.png"
+              alt="Palliative Care Stock Image 2"
+              height={400}
+              width={400}
+              style={{ width: "100%", height: "auto" }}
+            />
+            <div className={styles.freepik}>Designed by Freepik</div>
+          </div>
         </div>
         <div>
           <strong>The World Health Organisation (WHO)</strong> defines
@@ -47,13 +57,16 @@ export default function Home() {
           spiritual.”
         </div>
         <div className="py-8">
-          <Image
-            src="/palliative care 3.png"
-            alt="Palliative Care Stock Image 3"
-            height={400}
-            width={400}
-            style={{ width: "100%", height: "auto" }}
-          />
+          <div className="relative">
+            <Image
+              src="/palliative care 3.png"
+              alt="Palliative Care Stock Image 3"
+              height={400}
+              width={400}
+              style={{ width: "100%", height: "auto" }}
+            />
+            <div className={styles.freepik}>Designed by Freepik</div>
+          </div>
         </div>
         <div>
           <div>
@@ -65,7 +78,7 @@ export default function Home() {
             Download the referral application form link{" "}
             <a
               className="font-bold"
-              href="Referral Form.pdf"
+              href="docs/Referral Form.pdf"
               target="_blank"
               rel="noopener noreferrer">
               here

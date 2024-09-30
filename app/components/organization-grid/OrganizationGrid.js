@@ -12,13 +12,19 @@ export const OrganizationGrid = ({ organizations }) => {
           href={organization.href}
           target="_blank"
           rel="noopener noreferrer">
-          <Image
-            src={organization.img_path}
-            alt={`${organization.title} Logo`}
-            width={100}
-            height={100}
-            style={{ width: "auto", height: "100%" }}
-          />
+          <div className="flex flex-col">
+            <div className="flex flex-grow">
+              <Image
+                src={organization.img_path}
+                alt={`${organization.title} Logo`}
+                width={100}
+                height={100}
+                style={{ width: "auto", height: "100%" }}
+                className="mx-auto"
+              />
+            </div>
+            <span>{organization.title}</span>
+          </div>
         </a>
       ))}
     </div>

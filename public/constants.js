@@ -58,3 +58,17 @@ export const organizations = [
     img_path: "/organization-logos-300-300/TzuChiLOGO 300x300.png",
   },
 ];
+
+export const committees = [
+  {
+    name: "The Committee of Persatuan Kerjasama Paliatif Pulau Pinang (PKP3)",
+    position: "",
+  },
+  { name: "Dr. Jaishree Sharmini A/P Jivanadham", position: "Chairman" },
+  { name: "Dr. Tan Pih Lee", position: "Deputy Chairman" },
+  { name: "Dr. Lim Liang Yik", position: "Secretary" },
+  { name: "Dr. Loo Chia Ming", position: "Assistant Secretary" },
+  { name: "Dr. Rachel Jean George", position: "Treasurer" },
+  { name: "Dr. Siti Khairizan binti Rahim", position: "Committee Member" },
+  { name: "Mr. Lim Gou Choong", position: "Committee Member" },
+];

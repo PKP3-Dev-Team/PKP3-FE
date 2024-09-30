@@ -16,13 +16,17 @@ export default function ContactUs() {
     <main className="min-h-screen flex flex-col">
       <Header />
 
-      <Banner src="/IMG-20231007-WA0052.jpg" alt="pkp3 event" />
+      <Banner
+        src="/IMG-20231007-WA0052.jpg"
+        alt="pkp3 event"
+        tagPosition={"bottom-4 right-4"}
+      />
       <div className={styles.main_content}>
         <div>
           If you are interested in learning further about Persatuan Kerjasama
           Paliatif Pulau Pinang (PKP3), connect with us.
         </div>
-        <div className="flex flex-col gap-8 text-4xl items-center py-24">
+        <div className="flex flex-col gap-8 text-4xl p-24">
           <div className="flex gap-4 items-center">
             <FacebookIcon
               link={pkp3FacebookLink}
@@ -42,12 +46,12 @@ export default function ContactUs() {
               kerjasama.paliatif@gmail.com
             </a>
           </div>
-          <div className="flex gap-4 items-center">
+          {/* <div className="flex gap-4 items-center">
             <EmailIcon link={drLiangYikEmail} color="#000000" style="size-14" />
             <a href={drLiangYikEmail} target="_blank" rel="noopener noreferrer">
               liangyik@gmail.com (Dr. Lim Liang Yik - PKP3 Secretary)
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="py-8">
           <Image

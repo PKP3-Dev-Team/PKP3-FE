@@ -1,3 +1,21 @@
 .main_content {
   @apply flex-grow overflow-y-auto px-60 py-8 text-xl text-justify;
 }
+.freepik {
+  @apply absolute bottom-3 right-3 text-white;
+}
+.about_us_image_container {
+  @apply relative flex py-4;
+}
+.committee_grid {
+  @apply grid grid-cols-4 text-center border border-[#01002F] border-opacity-50 my-8;
+}
+.committee_cell {
+  @apply flex flex-col border border-[#01002F] border-opacity-50 py-10 px-8 justify-center;
+}
+.special_cell {
+  @apply committee_cell text-white bg-[#01002F];
+}
+.links {
+  @apply underline font-semibold text-xl;
+}
