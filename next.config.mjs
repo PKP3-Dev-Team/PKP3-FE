@@ -22,6 +22,15 @@ const nextConfig = {
    * See https://github.com/vercel/next.js/pull/66817
    */
   swcMinify: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "ik.imagekit.io",
+        port: "",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

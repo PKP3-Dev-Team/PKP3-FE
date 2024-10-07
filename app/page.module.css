@@ -1,12 +1,10 @@
 .main_content {
-  @apply flex-grow overflow-y-auto px-60 py-8 text-xl text-justify;
+  @apply py-8 flex-grow sm:px-10 md:px-10 lg:px-10 xl:px-60 text-xl text-justify;
 }
 .freepik {
   @apply absolute bottom-3 right-3 text-white;
 }
-.about_us_image_container {
-  @apply relative flex py-4;
-}
+
 .committee_grid {
   @apply grid grid-cols-4 text-center border border-[#01002F] border-opacity-50 my-8;
 }

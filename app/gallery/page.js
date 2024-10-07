@@ -1,15 +1,16 @@
 "use client"; // Add this at the top of the file
 
 import React, { useState } from "react";
-// import Image from "next/image";
 import { Footer } from "../components/footer/Footer";
 import { Header } from "../components/header/Header";
+import { IKImage } from "imagekitio-next";
 
+const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
 const images = [
-  { src: "/images/IMG_0301.jpeg", alt: "Image 1" },
-  { src: "/images/IMG_0325.jpeg", alt: "Image 2" },
-  { src: "/images/IMG_0340.jpeg", alt: "Image 3" },
-  { src: "/images/IMG-20231007-WA0062.jpg", alt: "Image 4" },
+  { path: "gallery/IMG_0301.jpeg", alt: "Image 1" },
+  { path: "gallery/IMG_0325.jpeg", alt: "Image 2" },
+  { path: "gallery/IMG_0340.jpeg", alt: "Image 3" },
+  { path: "gallery/IMG-20231007-WA0062.jpg", alt: "Image 4" },
 ];
 
 const ChevronLeft = () => (
@@ -64,9 +65,11 @@ const SlideshowGallery = () => {
       {/* Add margin-top to push the image container below the header */}
       <div className="flex-grow relative w-full max-w-4xl aspect-video mx-auto">
         <div className="absolute inset-0 flex items-center justify-center bg-white-800">
-          <img
-            src={images[currentIndex].src}
+          <IKImage
+            urlEndpoint={urlEndpoint}
+            path={images[currentIndex].path}
             alt={images[currentIndex].alt}
+            fill={true}
             className="max-w-full max-h-full object-contain"
           />
         </div>

@@ -1,5 +1,5 @@
 .header_div {
-  @apply flex justify-between p-3 w-full bg-[#01002F] text-white;
+  @apply flex lg:justify-between p-3 w-full bg-[#01002F] text-white;
   /* absolute opacity-80 z-10 bg-white */
 }
 .organization {

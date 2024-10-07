@@ -1,5 +1,5 @@
 .navigation_div {
-  @apply grid gap-14 px-4 grid-flow-col auto-cols-auto
+  @apply grid gap-14 px-4 grid-flow-col auto-cols-auto hidden lg:flex
   /* border-2 border-red-300; */;
 }
 

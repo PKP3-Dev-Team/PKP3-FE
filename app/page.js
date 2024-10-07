@@ -1,18 +1,22 @@
-import Image from "next/image";
+"use client";
 import { Banner } from "./components/banner/Banner";
 import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { OrganizationGrid } from "./components/organization-grid/OrganizationGrid";
-import { organizations } from "@/public/constants";
+import { organizations, referralFormLink } from "@/public/constants";
 
 import styles from "./page.module.css";
+import { IKImage } from "imagekitio-next";
+
+const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Header />
       <Banner
-        src="/editedIMG_0385.jpeg"
+        urlEndpoint={urlEndpoint}
+        path="home/editedIMG_0385.jpeg"
         alt="pkp3 event"
         tagPosition={"bottom-4 right-4"}
       />
@@ -25,24 +29,24 @@ export default function Home() {
           improve and support care providers via education and research. We also
           aim to advocate about issues related to palliative care.
         </div>
-        <div className="grid grid-cols-2 gap-8 py-8">
+        <div className="grid grid-cols-2 gap-8 py-8 h-[60vh]">
           <div className="relative">
-            <Image
-              src="/palliative care 1.png"
+            <IKImage
+              urlEndpoint={urlEndpoint}
+              path="home/palliative care 1.png"
               alt="Palliative Care Stock Image 1"
-              height={400}
-              width={400}
-              style={{ width: "100%", height: "auto" }}
+              fill
+              className="object-cover"
             />
             <div className={styles.freepik}>Designed by Freepik</div>
           </div>
           <div className="relative">
-            <Image
-              src="/palliative care 2.png"
+            <IKImage
+              urlEndpoint={urlEndpoint}
+              path="home/palliative care 2.png"
               alt="Palliative Care Stock Image 2"
-              height={400}
-              width={400}
-              style={{ width: "100%", height: "auto" }}
+              fill
+              className="object-cover"
             />
             <div className={styles.freepik}>Designed by Freepik</div>
           </div>
@@ -57,13 +61,13 @@ export default function Home() {
           spiritual.”
         </div>
         <div className="py-8">
-          <div className="relative">
-            <Image
-              src="/palliative care 3.png"
+          <div className="relative h-[50vh]">
+            <IKImage
+              urlEndpoint={urlEndpoint}
+              path="home/palliative care 3.png"
               alt="Palliative Care Stock Image 3"
-              height={400}
-              width={400}
-              style={{ width: "100%", height: "auto" }}
+              fill
+              className="object-cover"
             />
             <div className={styles.freepik}>Designed by Freepik</div>
           </div>
@@ -75,10 +79,19 @@ export default function Home() {
           </div>
           <OrganizationGrid organizations={organizations} />
           <div>
-            Download the referral application form link{" "}
+            <IKImage
+              urlEndpoint={urlEndpoint}
+              path="qr/Referral Form QR.png"
+              // fill
+              width={300}
+              height={300}
+              className="object-contain"
+            />
+            Scan the QR Code above or download the referral application form
+            link{" "}
             <a
               className="font-bold"
-              href="docs/Referral Form.pdf"
+              href={referralFormLink}
               target="_blank"
               rel="noopener noreferrer">
               here

@@ -1,15 +1,15 @@
-import Image from "next/image";
-export const Banner = ({ src, alt, tagPosition }) => {
+"use client";
+import { IKImage } from "imagekitio-next";
+export const Banner = ({ path, alt, tagPosition, urlEndpoint }) => {
   return (
-    <div className="relative">
-      <Image
-        src={src}
+    <div className="relative min-h-80">
+      <IKImage
+        urlEndpoint={urlEndpoint}
+        path={path}
         alt={alt}
-        layout="responsive"
-        width={800}
-        height={600}
-        // sizes="100vw"
-        style={{ width: "100%", height: "auto" }}
+        fill
+        className="object-cover"
+        loading="lazy"
       />
       <div
         className={`absolute bg-white bg-opacity-70 p-6 rounded-lg text-2xl ${tagPosition}`}>

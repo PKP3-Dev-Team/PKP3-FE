@@ -1,13 +1,19 @@
+"use client";
 import Link from "next/link";
-import Image from "next/image";
 import { Banner } from "../components/banner/Banner";
 import { Footer } from "../components/footer/Footer";
 import { Header } from "../components/header/Header";
 
 import styles from "../page.module.css";
-import { committees } from "@/public/constants";
+import {
+  committees,
+  foundingDocumentLink,
+  memberFormLink,
+} from "@/public/constants";
+import { IKImage } from "imagekitio-next";
 
 export default function AboutUs() {
+  const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
   const specialCell = (committee) => (
     <div className={styles.special_cell}>
       <div key={committee.name}>{committee.name}</div>
@@ -25,7 +31,8 @@ export default function AboutUs() {
     <main className="min-h-screen flex flex-col">
       <Header />
       <Banner
-        src="/editedIMG_0385.jpeg"
+        urlEndpoint={urlEndpoint}
+        path="about-us/editedIMG_0385.jpeg"
         alt="hehe"
         tagPosition={"bottom-4 left-4"}
       />
@@ -36,15 +43,15 @@ export default function AboutUs() {
           sectors in Penang. A portion of these individuals are doctors and
           nurses.
         </div>
-        <div className={styles.about_us_image_container}>
-          <Image
-            src="/founding members.jpeg"
+        <div className="relative flex h-[50vh] my-4">
+          <IKImage
+            urlEndpoint={urlEndpoint}
+            path="about-us/founding members.jpeg"
             alt="founding members"
-            height={400}
-            width={400}
-            style={{ width: "100%", height: "auto" }}
+            className="object-contain"
+            fill
           />
-          <div className="absolute bg-[#01002F] text-white bottom-4 flex w-full justify-center font-semibold p-4 text-md text-center">
+          <div className="absolute bg-[#01002F] text-white bottom-0 flex w-full justify-center font-semibold p-4 text-md text-center">
             Founding Members of PKP3 (taken after the first society meeting)
           </div>
         </div>
@@ -52,13 +59,13 @@ export default function AboutUs() {
           The annual membership fee is RM30, while the life membership fee is
           RM300.
         </div>
-        <div className={styles.about_us_image_container}>
-          <Image
-            src="/IMG_2703.jpeg"
+        <div className="relative flex h-[50vh] my-4">
+          <IKImage
+            urlEndpoint={urlEndpoint}
+            path="about-us/IMG_2703.jpeg"
             alt="event"
-            height={400}
-            width={400}
-            style={{ width: "100%", height: "auto" }}
+            fill
+            className="object-contain"
           />
         </div>
         <div>
@@ -66,21 +73,37 @@ export default function AboutUs() {
           Pinang (PKP3) as a member, below are links to membership application
           form and the founding document for further information.
         </div>
-        <div className="py-8 flex flex-col">
-          <Link
-            href="docs/PKP3SocietyFoundingDocumentApril2023.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.links}>
-            Founding Document
-          </Link>
-          <Link
-            href="docs/PKP3 Membership Form.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.links}>
-            PKP3 Membership Form
-          </Link>
+        <div className="py-8 md:flex lg:grid lg:grid-cols-2">
+          <div className="flex flex-col items-center">
+            <Link
+              href={foundingDocumentLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.links}>
+              Founding Document
+            </Link>
+            <IKImage
+              urlEndpoint={urlEndpoint}
+              path="qr/Founding Document QR.png"
+              height={500}
+              width={500}
+            />
+          </div>
+          <div className="flex flex-col items-center">
+            <Link
+              href={memberFormLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.links}>
+              PKP3 Membership Form
+            </Link>
+            <IKImage
+              urlEndpoint={urlEndpoint}
+              path="qr/PKP3 Membership Form QR.png"
+              height={500}
+              width={500}
+            />
+          </div>
         </div>
         <div>
           Kindly email the membership application form to{" "}

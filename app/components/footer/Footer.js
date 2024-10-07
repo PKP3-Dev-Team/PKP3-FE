@@ -1,13 +1,11 @@
 "use client";
 import Link from "next/link";
 import { SocMed } from "./SocMed";
-import styles from "./footer.module.css";
-import { UpArrowIcon } from "@/public/icons";
 
 export const Footer = () => {
   return (
-    <div className={styles.footer_div}>
-      <ul className={styles.footer_directory}>
+    <div className="sm:flex justify-between text-white bg-[#01002F] min-h-24 items-center p-8">
+      <ul className="hidden lg:flex gap-8">
         <div>
           <li>
             <Link href="./about-us">About Us</Link>

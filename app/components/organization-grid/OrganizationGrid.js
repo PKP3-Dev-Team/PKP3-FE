@@ -8,6 +8,7 @@ export const OrganizationGrid = ({ organizations }) => {
     <div className={styles.organization_grid}>
       {organizations.map((organization) => (
         <a
+          key={organization.href}
           className={styles.link}
           href={organization.href}
           target="_blank"
