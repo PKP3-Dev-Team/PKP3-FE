@@ -8,18 +8,21 @@ import { organizations, referralFormLink } from "@/public/constants";
 import styles from "./page.module.css";
 import { IKImage } from "imagekitio-next";
 
-const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
-
 export default function Home() {
+  const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
   return (
     <main className="min-h-screen flex flex-col">
-      <Header />
-      <Banner
+      <Header
         urlEndpoint={urlEndpoint}
-        path="home/editedIMG_0385.jpeg"
+        path="banner/pkp3 website banners-01.jpg"
+        alt="pkp3event"
+      />
+      {/* <Banner
+        urlEndpoint={urlEndpoint}
+        path="banner/pkp3 website banners-01.jpg"
         alt="pkp3 event"
         tagPosition={"bottom-4 right-4"}
-      />
+      /> */}
 
       <div className={styles.main_content}>
         <div>
@@ -29,7 +32,7 @@ export default function Home() {
           improve and support care providers via education and research. We also
           aim to advocate about issues related to palliative care.
         </div>
-        <div className="grid grid-cols-2 gap-8 py-8 h-[60vh]">
+        <div className="h-[60vh] grid grid-cols-1 sm:grid-cols-2 sm:h-[60vh] gap-8 py-8">
           <div className="relative">
             <IKImage
               urlEndpoint={urlEndpoint}
@@ -78,7 +81,7 @@ export default function Home() {
             organizations in Penang.
           </div>
           <OrganizationGrid organizations={organizations} />
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <IKImage
               urlEndpoint={urlEndpoint}
               path="qr/Referral Form QR.png"
@@ -87,16 +90,18 @@ export default function Home() {
               height={300}
               className="object-contain"
             />
-            Scan the QR Code above or download the referral application form
-            link{" "}
-            <a
-              className="font-bold"
-              href={referralFormLink}
-              target="_blank"
-              rel="noopener noreferrer">
-              here
-            </a>
-            .
+            <span>
+              Scan the QR Code above or download the referral application form
+              link{" "}
+              <a
+                className="font-bold"
+                href={referralFormLink}
+                target="_blank"
+                rel="noopener noreferrer">
+                here
+              </a>
+              .
+            </span>
           </div>
         </div>
       </div>

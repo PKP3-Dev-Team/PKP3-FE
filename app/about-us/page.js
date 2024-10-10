@@ -29,13 +29,17 @@ export default function AboutUs() {
 
   return (
     <main className="min-h-screen flex flex-col">
-      <Header />
-      <Banner
+      <Header
+        urlEndpoint={urlEndpoint}
+        path="banner/pkp3 website banners-02.jpg"
+        alt="pkp3event"
+      />
+      {/* <Banner
         urlEndpoint={urlEndpoint}
         path="about-us/editedIMG_0385.jpeg"
         alt="hehe"
         tagPosition={"bottom-4 left-4"}
-      />
+      /> */}
       <div className={styles.main_content}>
         <div>
           The members of Persatuan Kerjasama Paliatif Pulau Pinang (PKP3) are
@@ -43,29 +47,26 @@ export default function AboutUs() {
           sectors in Penang. A portion of these individuals are doctors and
           nurses.
         </div>
-        <div className="relative flex h-[50vh] my-4">
+        <div className="relative flex my-4 h-36 sm:h-56 md:h-64 lg:h-80 xl:h-96">
           <IKImage
             urlEndpoint={urlEndpoint}
-            path="about-us/founding members.jpeg"
+            path="about-us/founding members (w caption).jpg"
             alt="founding members"
-            className="object-contain"
+            className="object-contain w-full"
             fill
           />
-          <div className="absolute bg-[#01002F] text-white bottom-0 flex w-full justify-center font-semibold p-4 text-md text-center">
-            Founding Members of PKP3 (taken after the first society meeting)
-          </div>
         </div>
         <div>
           The annual membership fee is RM30, while the life membership fee is
           RM300.
         </div>
-        <div className="relative flex h-[50vh] my-4">
+        <div className="relative flex my-4 h-36 sm:h-56 md:h-64 lg:h-80 xl:h-96 ">
           <IKImage
             urlEndpoint={urlEndpoint}
             path="about-us/IMG_2703.jpeg"
             alt="event"
             fill
-            className="object-contain"
+            className="object-contain w-full"
           />
         </div>
         <div>

@@ -13,12 +13,6 @@ export const Footer = () => {
           <li>
             <Link href="./what-we-do">What We Do</Link>
           </li>
-        </div>
-
-        <div>
-          <li>
-            <Link href="./gallery">Gallery</Link>
-          </li>
           <li>
             <Link href="./contact-us">Contact Us</Link>
           </li>

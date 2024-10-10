@@ -1,5 +1,11 @@
 .main_content {
-  @apply py-8 flex-grow sm:px-10 md:px-10 lg:px-10 xl:px-60 text-xl text-justify;
+  @apply text-sm text-justify p-8 flex-grow 
+  sm:px-10 
+  md:px-10 md:text-xl 
+  xl:px-60;
+}
+.pkp3_achievement_items {
+  @apply mb-3 lg:m-0 lg:flex lg:px-20 lg:py-20 lg:items-center;
 }
 .freepik {
   @apply absolute bottom-3 right-3 text-white;

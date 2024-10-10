@@ -11,14 +11,18 @@ export default function ContactUs() {
   const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
   return (
     <main className="min-h-screen flex flex-col">
-      <Header />
+      <Header
+        urlEndpoint={urlEndpoint}
+        path="banner/pkp3 website banners-04.jpg"
+        alt="pkp3event"
+      />
 
-      <Banner
+      {/* <Banner
         path="contact-us/IMG-20231007-WA0052.jpg"
         alt="pkp3 event"
         tagPosition={"bottom-4 right-4"}
         urlEndpoint={urlEndpoint}
-      />
+      /> */}
       <div className={styles.main_content}>
         <div>
           If you are interested in learning further about Persatuan Kerjasama

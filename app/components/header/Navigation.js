@@ -14,9 +14,6 @@ export const Navigation = () => {
         <Link href="./what-we-do">What We Do</Link>
       </div>
       <div className={styles.nav_items}>
-        <Link href="./gallery">Gallery</Link>
-      </div>
-      <div className={styles.nav_items}>
         <Link href="./contact-us">Contact Us</Link>
       </div>
       {/* <div className={styles.nav_items}>

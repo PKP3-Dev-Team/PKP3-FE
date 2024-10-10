@@ -79,3 +79,10 @@ export const committees = [
   { name: "Dr. Siti Khairizan binti Rahim", position: "Committee Member" },
   { name: "Mr. Lim Gou Choong", position: "Committee Member" },
 ];
+
+export const images = [
+  { path: "gallery/IMG_0301.jpeg", alt: "Image 1" },
+  { path: "gallery/IMG_0325.jpeg", alt: "Image 2" },
+  { path: "gallery/IMG_0340.jpeg", alt: "Image 3" },
+  { path: "gallery/IMG-20231007-WA0062.jpg", alt: "Image 4" },
+];
