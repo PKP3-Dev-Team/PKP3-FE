@@ -8,10 +8,7 @@ export const OrganizationGrid = ({ organizations }) => {
     <div className={styles.organization_grid}>
       {organizations.map((organization) =>
         organization.href === "#" ? (
-          <div
-            key={organization.href}
-            className={styles.link}
-            onClick={organization.href === "#" ? "return false" : ""}>
+          <div key={organization.href} className={styles.link}>
             <div className="flex flex-col">
               <div className="flex flex-grow">
                 <Image

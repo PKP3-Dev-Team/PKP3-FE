@@ -57,6 +57,7 @@ module.exports = {
       },
       screens: {
         phone: "520px",
+        footer_breakpoint: "650px",
       },
     },
   },

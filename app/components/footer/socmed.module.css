@@ -1,6 +1,0 @@
-.socmed_list {
-  @apply flex gap-3 items-center;
-}
-.contact_us {
-  @apply mr-2;
-}

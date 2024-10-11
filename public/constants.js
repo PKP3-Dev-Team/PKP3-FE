@@ -14,7 +14,8 @@ export const referralFormLink =
 export const organizations = [
   {
     title: "Charis Hospice",
-    href: "https://www.charishospice.com/#/",
+    // href: "https://www.charishospice.com/#/",
+    href: "#",
     img_path:
       "/images/organization-logos-300-300/Charis-Hospice-Logo 300x300.png",
   },
@@ -34,29 +35,34 @@ export const organizations = [
   },
   {
     title: "Kek Lok Si Charitable Hospital",
-    href: "https://www.klsch.my/",
+    // href: "https://www.klsch.my/",
+    href: "#",
     img_path:
       "/images/organization-logos-300-300/Kek Lok Si Charitable Hospital 300x300.png",
   },
   {
     title: "Pure Lotus Hospice of Compassion",
-    href: "https://www.purelotushospice.com/",
+    // href: "https://www.purelotushospice.com/",
+    href: "#",
     img_path: "/images/organization-logos-300-300/logo-pure-lotus 30x300.png",
   },
   {
     title: "Malaysian Association of Paediatric Palliative Care",
-    href: "https://mappac.org/",
+    // href: "https://mappac.org/",
+    href: "#",
     img_path: "/images/organization-logos-300-300/MAPAC 300x300.png",
   },
   {
     title: "Mount Miriam Cancer Hospital",
-    href: "https://mountmiriam.com/",
+    // href: "https://mountmiriam.com/",
+    href: "#",
     img_path:
       "/images/organization-logos-300-300/mount miriam cancer hospital 300x300.png",
   },
   {
     title: "Penang Hospice Society",
-    href: "https://penanghospice.org.my/",
+    // href: "https://penanghospice.org.my/",
+    href: "#",
     img_path:
       "/images/organization-logos-300-300/Penang Hospice Society 300x300.png",
   },
@@ -94,4 +100,11 @@ export const images = [
   { path: "/images/gallery/IMG_0325.jpeg", alt: "Image 2" },
   { path: "/images/gallery/IMG_0340.jpeg", alt: "Image 3" },
   { path: "/images/gallery/IMG-20231007-WA0062.jpg", alt: "Image 4" },
+];
+
+export const menuItems = [
+  { name: "Home", href: "./" },
+  { name: "About Us", href: "./about-us" },
+  { name: "What We Do", href: "./what-we-do" },
+  { name: "Contact Us", href: "./contact-us" },
 ];

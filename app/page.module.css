@@ -12,7 +12,7 @@
 }
 
 .committee_grid {
-  @apply grid grid-cols-4 text-center border border-[#01002F] border-opacity-50 my-8;
+  @apply grid grid-cols-2 sm:grid-cols-4 text-center border border-[#01002F] border-opacity-50 my-8;
 }
 .committee_cell {
   @apply flex flex-col border border-[#01002F] border-opacity-50 py-10 px-8 justify-center;

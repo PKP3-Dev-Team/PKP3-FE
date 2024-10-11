@@ -1,6 +1,0 @@
-.top {
-  @apply flex items-center justify-center gap-4;
-}
-.top_button {
-  @apply font-bold;
-}

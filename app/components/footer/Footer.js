@@ -4,7 +4,7 @@ import { SocMed } from "./SocMed";
 
 export const Footer = () => {
   return (
-    <div className="sm:flex justify-between text-white bg-[#01002F] min-h-24 items-center p-8">
+    <div className="flex flex-col gap-4 footer_breakpoint:flex-row justify-between text-white bg-[#01002F] min-h-24 items-center p-8">
       <ul className="hidden lg:flex gap-8">
         <div>
           <li>
@@ -20,12 +20,14 @@ export const Footer = () => {
       </ul>
 
       {/* <button
-        className={styles.top}
+        className="flex items-center justify-center gap-4"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
         <UpArrowIcon color="#ffffff" />
-        <span className={styles.top_button}>BACK TO TOP</span>
+        <span className="font-bold">BACK TO TOP</span>
       </button> */}
-      <p>&copy; Pusat Kerjasama Paliatif Pulau Pinang</p>
+      <p className=" text-center">
+        &copy; Pusat Kerjasama Paliatif Pulau Pinang
+      </p>
 
       <SocMed />
     </div>
