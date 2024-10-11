@@ -40,13 +40,13 @@ export const Header = ({ urlEndpoint, path, alt }) => {
         )}
         <Navigation />
       </div>
-      <div className="relative flex w-full h-[20vh] sm:h-[30vh] md:h-[40vh] xl:h-[70vh]">
+      <div className="relative flex w-full aspect-[1920/800]">
         <IKImage
           urlEndpoint={urlEndpoint}
           path={path}
           alt={alt}
           fill
-          className="object-contain absolute top-0 left-0 w-full h-full"
+          className="object-cover absolute top-0 left-0 w-full h-full"
         />
       </div>
     </div>
