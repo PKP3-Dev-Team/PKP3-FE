@@ -1,5 +1,5 @@
 "use client";
-import { Banner } from "./components/banner/Banner";
+import Image from "next/image";
 import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { OrganizationGrid } from "./components/organization-grid/OrganizationGrid";
@@ -14,15 +14,9 @@ export default function Home() {
     <main className="min-h-screen flex flex-col">
       <Header
         urlEndpoint={urlEndpoint}
-        path="banner/pkp3 website banners-01.jpg"
+        path="/images/banner/(updated dimensions) pkp3 website banners-06.jpg"
         alt="pkp3event"
       />
-      {/* <Banner
-        urlEndpoint={urlEndpoint}
-        path="banner/pkp3 website banners-01.jpg"
-        alt="pkp3 event"
-        tagPosition={"bottom-4 right-4"}
-      /> */}
 
       <div className={styles.main_content}>
         <div>
@@ -34,22 +28,38 @@ export default function Home() {
         </div>
         <div className="h-[60vh] grid grid-cols-1 sm:grid-cols-2 sm:h-[60vh] gap-8 py-8">
           <div className="relative">
-            <IKImage
+            {/* <IKImage
               urlEndpoint={urlEndpoint}
               path="home/palliative care 1.png"
               alt="Palliative Care Stock Image 1"
               fill
               className="object-cover"
+            /> */}
+            <Image
+              src="/images/home/palliative care 1.png"
+              alt="Palliative Care Stock Image 1"
+              fill
+              className="object-cover"
+              loading="lazy"
+              quality={100}
             />
             <div className={styles.freepik}>Designed by Freepik</div>
           </div>
           <div className="relative">
-            <IKImage
+            {/* <IKImage
               urlEndpoint={urlEndpoint}
               path="home/palliative care 2.png"
               alt="Palliative Care Stock Image 2"
               fill
               className="object-cover"
+            /> */}
+            <Image
+              src="/images/home/palliative care 2.png"
+              alt="Palliative Care Stock Image 2"
+              fill
+              className="object-cover"
+              loading="lazy"
+              quality={100}
             />
             <div className={styles.freepik}>Designed by Freepik</div>
           </div>
@@ -65,12 +75,20 @@ export default function Home() {
         </div>
         <div className="py-8">
           <div className="relative h-[50vh]">
-            <IKImage
+            {/* <IKImage
               urlEndpoint={urlEndpoint}
               path="home/palliative care 3.png"
               alt="Palliative Care Stock Image 3"
               fill
               className="object-cover"
+            /> */}
+            <Image
+              src="/images/home/palliative care 3.png"
+              alt="Palliative Care Stock Image 3"
+              fill
+              className="object-cover"
+              loading="lazy"
+              quality={100}
             />
             <div className={styles.freepik}>Designed by Freepik</div>
           </div>
@@ -82,10 +100,16 @@ export default function Home() {
           </div>
           <OrganizationGrid organizations={organizations} />
           <div className="flex flex-col items-center md:items-start">
-            <IKImage
+            {/* <IKImage
               urlEndpoint={urlEndpoint}
               path="qr/Referral Form QR.png"
               // fill
+              width={300}
+              height={300}
+              className="object-contain"
+            /> */}
+            <Image
+              src="/images/qr/Referral Form QR.png"
               width={300}
               height={300}
               className="object-contain"

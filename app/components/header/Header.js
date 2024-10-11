@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Navigation } from "./Navigation";
-import { IKImage } from "imagekitio-next";
 
 import styles from "./header.module.css";
 import { useState } from "react";
@@ -28,7 +27,7 @@ export const Header = ({ urlEndpoint, path, alt }) => {
         {!hamburgerIsOpen && (
           <Link href="." className={styles.organization}>
             <Image
-              src={"/logo transparent bg.png"}
+              src={"/images/logo transparent bg.png"}
               alt={"PKP3 Logo"}
               width={80}
               height={80}
@@ -40,10 +39,17 @@ export const Header = ({ urlEndpoint, path, alt }) => {
         )}
         <Navigation />
       </div>
-      <div className="relative flex w-full h-[20vh] sm:h-[30vh] md:h-[40vh] xl:h-[70vh]">
-        <IKImage
+      {/* <div className="relative flex w-full h-[20vh] sm:h-[30vh] md:h-[40vh] xl:h-[70vh]"> */}
+      <div className="relative flex w-full aspect-[2246/800]">
+        {/* <IKImage
           urlEndpoint={urlEndpoint}
           path={path}
+          alt={alt}
+          fill
+          className="object-contain absolute top-0 left-0 w-full h-full"
+        /> */}
+        <Image
+          src={path}
           alt={alt}
           fill
           className="object-contain absolute top-0 left-0 w-full h-full"

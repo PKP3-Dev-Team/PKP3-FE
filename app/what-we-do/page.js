@@ -1,12 +1,12 @@
 "use client";
 import { IKImage } from "imagekitio-next";
-import { Banner } from "../components/banner/Banner";
 import { Footer } from "../components/footer/Footer";
 import { Gallery } from "../components/gallery/Gallery";
 import { Header } from "../components/header/Header";
 
 import { images } from "@/public/constants";
 import styles from "../page.module.css";
+import Image from "next/image";
 
 export default function WhatWeDo() {
   const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
@@ -14,16 +14,10 @@ export default function WhatWeDo() {
     <main className="min-h-screen flex flex-col">
       <Header
         urlEndpoint={urlEndpoint}
-        path="banner/pkp3 website banners-03.jpg"
+        path="/images/banner/(updated dimensions) pkp3 website banners-09.jpg"
         alt="pkp3event"
       />
       <div className="flex-grow overflow-y-auto">
-        {/* <Banner
-          urlEndpoint={urlEndpoint}
-          path="home/editedIMG_0385.jpeg"
-          alt="pkp3 event"
-          tagPosition={"bottom-4 right-4"}
-        /> */}
         <div className={styles.main_content}>
           <div>
             While palliative care is yet to be fully integrated into the
@@ -34,10 +28,16 @@ export default function WhatWeDo() {
           {/* <div className="relative w-full max-w-4xl mx-auto aspect-video md:h-[30vh] lg:h-[40vh] xl:h-[50vh]"> */}
           <div className="relative w-full max-w-4xl mx-auto aspect-video ">
             <div className="absolute flex inset-0">
-              <IKImage
+              {/* <IKImage
                 urlEndpoint={urlEndpoint}
                 path="what-we-do/what-we-do-1"
                 alt="Activity Image"
+                fill
+                className="object-contain max-w-full max-h-full"
+              /> */}
+              <Image
+                src="/images/what-we-do/what-we-do-1.png"
+                alt="Group Photo"
                 fill
                 className="object-contain max-w-full max-h-full"
               />
@@ -78,19 +78,32 @@ export default function WhatWeDo() {
           </div>
           <div className="grid grid-cols-1 gap-8 h-[100vh] mb-8 sm:grid-cols-2 sm:h-[50vh] md:h-[60vh] lg:h-[70vh]">
             <div className="relative">
-              <IKImage
+              {/* <IKImage
                 urlEndpoint={urlEndpoint}
                 path="brochure/brochure1.JPG"
                 alt="Activity Image"
                 fill
                 className="object-contain max-h-full"
+              /> */}
+              <Image
+                src="/images/brochure/brochure1.JPG"
+                alt="World Hospice and Palliative Care Day 2024 Brochure 1"
+                fill
+                className="object-contain max-h-full"
               />
             </div>
             <div className="relative">
-              <IKImage
+              {/* <IKImage
                 urlEndpoint={urlEndpoint}
                 path="brochure/brochure2.JPG"
                 alt="Activity Image"
+                fill
+                className="object-contain max-h-full"
+              />
+               */}
+              <Image
+                src="/images/brochure/brochure2.JPG"
+                alt="World Hospice and Palliative Care Day 2024 Brochure 2"
                 fill
                 className="object-contain max-h-full"
               />

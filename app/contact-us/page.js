@@ -1,11 +1,11 @@
 "use client";
-import { Banner } from "../components/banner/Banner";
 import { Footer } from "../components/footer/Footer";
 import { Header } from "../components/header/Header";
 import { EmailIcon, FacebookIcon } from "@/public/icons";
 import { pkp3Email, pkp3FacebookLink } from "@/public/constants";
 import { IKImage } from "imagekitio-next";
 import styles from "../page.module.css";
+import Image from "next/image";
 
 export default function ContactUs() {
   const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
@@ -13,16 +13,9 @@ export default function ContactUs() {
     <main className="min-h-screen flex flex-col">
       <Header
         urlEndpoint={urlEndpoint}
-        path="banner/pkp3 website banners-04.jpg"
+        path="/images/banner/(updated dimensions) pkp3 website banners-08.jpg"
         alt="pkp3event"
       />
-
-      {/* <Banner
-        path="contact-us/IMG-20231007-WA0052.jpg"
-        alt="pkp3 event"
-        tagPosition={"bottom-4 right-4"}
-        urlEndpoint={urlEndpoint}
-      /> */}
       <div className={styles.main_content}>
         <div>
           If you are interested in learning further about Persatuan Kerjasama
@@ -59,8 +52,8 @@ export default function ContactUs() {
             <EmailIcon link={pkp3Email} color="#000000" style="size-14" />
           </div>
         </div>
-        <div className="py-8">
-          <IKImage
+        <div className="relative h-[30vh] py-8 sm:grid-cols-2  md:h-[40vh] lg:h-[50vh]">
+          {/* <IKImage
             urlEndpoint={urlEndpoint}
             path="contact-us/IMG_0176.jpeg"
             alt="pkp3 event"
@@ -68,6 +61,14 @@ export default function ContactUs() {
             // className="object-contain"
             // quality={100}
             // loading="lazy"
+          /> */}
+          <Image
+            src="/images/contact-us/IMG_0176.jpeg"
+            alt="PKP3 Event"
+            fill
+            className="object-contain max-h-full"
+            quality={100}
+            loading="lazy"
           />
         </div>
       </div>

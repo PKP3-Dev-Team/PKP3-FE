@@ -6,28 +6,49 @@ import styles from "./organization-grid.module.css";
 export const OrganizationGrid = ({ organizations }) => {
   return (
     <div className={styles.organization_grid}>
-      {organizations.map((organization) => (
-        <a
-          key={organization.href}
-          className={styles.link}
-          href={organization.href}
-          target="_blank"
-          rel="noopener noreferrer">
-          <div className="flex flex-col">
-            <div className="flex flex-grow">
-              <Image
-                src={organization.img_path}
-                alt={`${organization.title} Logo`}
-                width={100}
-                height={100}
-                style={{ width: "auto", height: "100%" }}
-                className="mx-auto"
-              />
+      {organizations.map((organization) =>
+        organization.href === "#" ? (
+          <div
+            key={organization.href}
+            className={styles.link}
+            onClick={organization.href === "#" ? "return false" : ""}>
+            <div className="flex flex-col">
+              <div className="flex flex-grow">
+                <Image
+                  src={organization.img_path}
+                  alt={`${organization.title} Logo`}
+                  width={100}
+                  height={100}
+                  style={{ width: "auto", height: "100%" }}
+                  className="mx-auto"
+                />
+              </div>
+              <span>{organization.title}</span>
             </div>
-            <span>{organization.title}</span>
           </div>
-        </a>
-      ))}
+        ) : (
+          <a
+            key={organization.href}
+            className={styles.link}
+            href={organization.href}
+            target="_blank"
+            rel="noopener noreferrer">
+            <div className="flex flex-col">
+              <div className="flex flex-grow">
+                <Image
+                  src={organization.img_path}
+                  alt={`${organization.title} Logo`}
+                  width={100}
+                  height={100}
+                  style={{ width: "auto", height: "100%" }}
+                  className="mx-auto"
+                />
+              </div>
+              <span>{organization.title}</span>
+            </div>
+          </a>
+        )
+      )}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Banner } from "../components/banner/Banner";
+import Image from "next/image";
 import { Footer } from "../components/footer/Footer";
 import { Header } from "../components/header/Header";
 
@@ -31,15 +31,10 @@ export default function AboutUs() {
     <main className="min-h-screen flex flex-col">
       <Header
         urlEndpoint={urlEndpoint}
-        path="banner/pkp3 website banners-02.jpg"
+        path="/images/banner/(updated dimensions) pkp3 website banners-07.jpg"
         alt="pkp3event"
       />
-      {/* <Banner
-        urlEndpoint={urlEndpoint}
-        path="about-us/editedIMG_0385.jpeg"
-        alt="hehe"
-        tagPosition={"bottom-4 left-4"}
-      /> */}
+
       <div className={styles.main_content}>
         <div>
           The members of Persatuan Kerjasama Paliatif Pulau Pinang (PKP3) are
@@ -48,10 +43,16 @@ export default function AboutUs() {
           nurses.
         </div>
         <div className="relative flex my-4 h-36 sm:h-56 md:h-64 lg:h-80 xl:h-96">
-          <IKImage
+          {/* <IKImage
             urlEndpoint={urlEndpoint}
             path="about-us/founding members (w caption).jpg"
             alt="founding members"
+            className="object-contain w-full"
+            fill
+          /> */}
+          <Image
+            src="/images/about-us/founding members (w caption).jpg"
+            alt="Founding Members of PKP3"
             className="object-contain w-full"
             fill
           />
@@ -61,12 +62,18 @@ export default function AboutUs() {
           RM300.
         </div>
         <div className="relative flex my-4 h-36 sm:h-56 md:h-64 lg:h-80 xl:h-96 ">
-          <IKImage
+          {/* <IKImage
             urlEndpoint={urlEndpoint}
             path="about-us/IMG_2703.jpeg"
             alt="event"
             fill
             className="object-contain w-full"
+          /> */}
+          <Image
+            src="/images/about-us/IMG_2703.jpeg"
+            alt="Founding Members of PKP3"
+            className="object-contain w-full"
+            fill
           />
         </div>
         <div>
@@ -83,9 +90,16 @@ export default function AboutUs() {
               className={styles.links}>
               Founding Document
             </Link>
-            <IKImage
+            {/* <IKImage
               urlEndpoint={urlEndpoint}
               path="qr/Founding Document QR.png"
+              height={500}
+              width={500}
+            /> */}
+            <Image
+              src="/images/qr/Founding Document QR.png"
+              alt="QR Code of Founding Document"
+              // className="object-contain w-full"
               height={500}
               width={500}
             />
@@ -98,9 +112,17 @@ export default function AboutUs() {
               className={styles.links}>
               PKP3 Membership Form
             </Link>
-            <IKImage
+            {/* <IKImage
               urlEndpoint={urlEndpoint}
               path="qr/PKP3 Membership Form QR.png"
+              height={500}
+              width={500}
+            />
+             */}
+            <Image
+              src="/images/qr/PKP3 Membership Form QR.png"
+              alt="QR Code of Membership Form"
+              // className="object-contain w-full"
               height={500}
               width={500}
             />
