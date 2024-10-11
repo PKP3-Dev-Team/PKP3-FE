@@ -5,6 +5,7 @@ import { Navigation } from "./Navigation";
 
 import styles from "./header.module.css";
 import { useState } from "react";
+import { IKImage } from "imagekitio-next";
 
 export const Header = ({ urlEndpoint, path, alt }) => {
   const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
@@ -41,19 +42,19 @@ export const Header = ({ urlEndpoint, path, alt }) => {
       </div>
       {/* <div className="relative flex w-full h-[20vh] sm:h-[30vh] md:h-[40vh] xl:h-[70vh]"> */}
       <div className="relative flex w-full aspect-[2246/800]">
-        {/* <IKImage
+        <IKImage
           urlEndpoint={urlEndpoint}
           path={path}
           alt={alt}
           fill
           className="object-contain absolute top-0 left-0 w-full h-full"
-        /> */}
-        <Image
+        />
+        {/* <Image
           src={path}
           alt={alt}
           fill
           className="object-contain absolute top-0 left-0 w-full h-full"
-        />
+        /> */}
       </div>
     </div>
   );

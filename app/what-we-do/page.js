@@ -14,7 +14,7 @@ export default function WhatWeDo() {
     <main className="min-h-screen flex flex-col">
       <Header
         urlEndpoint={urlEndpoint}
-        path="/images/banner/(updated dimensions) pkp3 website banners-09.jpg"
+        path="banner/(updated dimensions) pkp3 website banners-09.jpg"
         alt="pkp3event"
       />
       <div className="flex-grow overflow-y-auto">
@@ -28,19 +28,19 @@ export default function WhatWeDo() {
           {/* <div className="relative w-full max-w-4xl mx-auto aspect-video md:h-[30vh] lg:h-[40vh] xl:h-[50vh]"> */}
           <div className="relative w-full max-w-4xl mx-auto aspect-video ">
             <div className="absolute flex inset-0">
-              {/* <IKImage
+              <IKImage
                 urlEndpoint={urlEndpoint}
                 path="what-we-do/what-we-do-1"
                 alt="Activity Image"
                 fill
                 className="object-contain max-w-full max-h-full"
-              /> */}
-              <Image
+              />
+              {/* <Image
                 src="/images/what-we-do/what-we-do-1.png"
                 alt="Group Photo"
                 fill
                 className="object-contain max-w-full max-h-full"
-              />
+              /> */}
             </div>
           </div>
           <div>
@@ -78,35 +78,35 @@ export default function WhatWeDo() {
           </div>
           <div className="grid grid-cols-1 gap-8 h-[100vh] mb-8 sm:grid-cols-2 sm:h-[50vh] md:h-[60vh] lg:h-[70vh]">
             <div className="relative">
-              {/* <IKImage
+              <IKImage
                 urlEndpoint={urlEndpoint}
                 path="brochure/brochure1.JPG"
                 alt="Activity Image"
                 fill
                 className="object-contain max-h-full"
-              /> */}
-              <Image
+              />
+              {/* <Image
                 src="/images/brochure/brochure1.JPG"
                 alt="World Hospice and Palliative Care Day 2024 Brochure 1"
                 fill
                 className="object-contain max-h-full"
-              />
+              /> */}
             </div>
             <div className="relative">
-              {/* <IKImage
+              <IKImage
                 urlEndpoint={urlEndpoint}
                 path="brochure/brochure2.JPG"
                 alt="Activity Image"
                 fill
                 className="object-contain max-h-full"
               />
-               */}
-              <Image
+
+              {/* <Image
                 src="/images/brochure/brochure2.JPG"
                 alt="World Hospice and Palliative Care Day 2024 Brochure 2"
                 fill
                 className="object-contain max-h-full"
-              />
+              /> */}
             </div>
           </div>
           <div>

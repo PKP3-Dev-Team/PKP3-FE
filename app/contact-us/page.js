@@ -13,7 +13,7 @@ export default function ContactUs() {
     <main className="min-h-screen flex flex-col">
       <Header
         urlEndpoint={urlEndpoint}
-        path="/images/banner/(updated dimensions) pkp3 website banners-08.jpg"
+        path="banner/(updated dimensions) pkp3 website banners-08.jpg"
         alt="pkp3event"
       />
       <div className={styles.main_content}>
@@ -53,23 +53,23 @@ export default function ContactUs() {
           </div>
         </div>
         <div className="relative h-[30vh] py-8 sm:grid-cols-2  md:h-[40vh] lg:h-[50vh]">
-          {/* <IKImage
+          <IKImage
             urlEndpoint={urlEndpoint}
             path="contact-us/IMG_0176.jpeg"
             alt="pkp3 event"
-            // fill
-            // className="object-contain"
-            // quality={100}
-            // loading="lazy"
-          /> */}
-          <Image
+            fill
+            className="object-contain"
+            quality={100}
+            loading="lazy"
+          />
+          {/* <Image
             src="/images/contact-us/IMG_0176.jpeg"
             alt="PKP3 Event"
             fill
             className="object-contain max-h-full"
             quality={100}
             loading="lazy"
-          />
+          /> */}
         </div>
       </div>
       <Footer />

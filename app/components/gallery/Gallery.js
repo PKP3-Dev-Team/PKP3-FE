@@ -49,19 +49,19 @@ export const Gallery = ({ urlEndpoint, images }) => {
   return (
     <div className="mx-auto aspect-video max-w-4xl w-full relative">
       <div className="absolute inset-0 flex items-center justify-center bg-white-800">
-        {/* <IKImage
+        <IKImage
           urlEndpoint={urlEndpoint}
           path={images[currentIndex].path}
           alt={images[currentIndex].alt}
           fill
           className="max-w-full max-h-full object-contain"
-        /> */}
-        <Image
+        />
+        {/* <Image
           src={images[currentIndex].path}
           alt={images[currentIndex].alt}
           fill
           className="max-w-full max-h-full object-contain"
-        />
+        /> */}
       </div>
 
       {/* Previous button */}

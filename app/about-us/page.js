@@ -31,7 +31,7 @@ export default function AboutUs() {
     <main className="min-h-screen flex flex-col">
       <Header
         urlEndpoint={urlEndpoint}
-        path="/images/banner/(updated dimensions) pkp3 website banners-07.jpg"
+        path="banner/(updated dimensions) pkp3 website banners-07.jpg"
         alt="pkp3event"
       />
 
@@ -43,38 +43,38 @@ export default function AboutUs() {
           nurses.
         </div>
         <div className="relative flex my-4 h-36 sm:h-56 md:h-64 lg:h-80 xl:h-96">
-          {/* <IKImage
+          <IKImage
             urlEndpoint={urlEndpoint}
             path="about-us/founding members (w caption).jpg"
             alt="founding members"
             className="object-contain w-full"
             fill
-          /> */}
-          <Image
+          />
+          {/* <Image
             src="/images/about-us/founding members (w caption).jpg"
             alt="Founding Members of PKP3"
             className="object-contain w-full"
             fill
-          />
+          /> */}
         </div>
         <div>
           The annual membership fee is RM30, while the life membership fee is
           RM300.
         </div>
         <div className="relative flex my-4 h-36 sm:h-56 md:h-64 lg:h-80 xl:h-96 ">
-          {/* <IKImage
+          <IKImage
             urlEndpoint={urlEndpoint}
             path="about-us/IMG_2703.jpeg"
             alt="event"
             fill
             className="object-contain w-full"
-          /> */}
-          <Image
+          />
+          {/* <Image
             src="/images/about-us/IMG_2703.jpeg"
             alt="Founding Members of PKP3"
             className="object-contain w-full"
             fill
-          />
+          /> */}
         </div>
         <div>
           If you are interested in joining Persatuan Kerjasama Paliatif Pulau
@@ -90,19 +90,19 @@ export default function AboutUs() {
               className={styles.links}>
               Founding Document
             </Link>
-            {/* <IKImage
+            <IKImage
               urlEndpoint={urlEndpoint}
               path="qr/Founding Document QR.png"
               height={500}
               width={500}
-            /> */}
-            <Image
+            />
+            {/* <Image
               src="/images/qr/Founding Document QR.png"
               alt="QR Code of Founding Document"
               // className="object-contain w-full"
               height={500}
               width={500}
-            />
+            /> */}
           </div>
           <div className="flex flex-col items-center">
             <Link
@@ -112,20 +112,20 @@ export default function AboutUs() {
               className={styles.links}>
               PKP3 Membership Form
             </Link>
-            {/* <IKImage
+            <IKImage
               urlEndpoint={urlEndpoint}
               path="qr/PKP3 Membership Form QR.png"
               height={500}
               width={500}
             />
-             */}
-            <Image
+
+            {/* <Image
               src="/images/qr/PKP3 Membership Form QR.png"
               alt="QR Code of Membership Form"
               // className="object-contain w-full"
               height={500}
               width={500}
-            />
+            /> */}
           </div>
         </div>
         <div>

@@ -90,8 +90,8 @@ export const committees = [
 ];
 
 export const images = [
-  { path: "/images/gallery/IMG_0301.jpeg", alt: "Image 1" },
-  { path: "/images/gallery/IMG_0325.jpeg", alt: "Image 2" },
-  { path: "/images/gallery/IMG_0340.jpeg", alt: "Image 3" },
-  { path: "/images/gallery/IMG-20231007-WA0062.jpg", alt: "Image 4" },
+  { path: "gallery/IMG_0325.jpeg", alt: "Image 2" },
+  { path: "gallery/IMG_0340.jpeg", alt: "Image 3" },
+  { path: "gallery/IMG_0301.jpeg", alt: "Image 1" },
+  { path: "gallery/IMG-20231007-WA0062.jpg", alt: "Image 4" },
 ];
