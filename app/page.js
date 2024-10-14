@@ -95,8 +95,8 @@ export default function Home() {
         </div>
         <div>
           <div>
-            The following are links to the various Hospice and Palliative care
-            organizations in Penang.
+            These are the various Hospice and Palliative care organizations in
+            Penang.
           </div>
           <OrganizationGrid organizations={organizations} />
           <div className="flex flex-col items-center md:items-start">

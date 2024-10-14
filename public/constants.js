@@ -100,6 +100,42 @@ export const images = [
   { path: "/images/gallery/IMG_0325.jpeg", alt: "Image 2" },
   { path: "/images/gallery/IMG_0340.jpeg", alt: "Image 3" },
   { path: "/images/gallery/IMG-20231007-WA0062.jpg", alt: "Image 4" },
+  {
+    path: "/images/gallery/world_hospice_and_palliative_care_day_2024_1.jpeg",
+    alt: "WHPC 1",
+  },
+  {
+    path: "/images/gallery/world_hospice_and_palliative_care_day_2024_2.jpeg",
+    alt: "WHPC 2",
+  },
+  {
+    path: "/images/gallery/world_hospice_and_palliative_care_day_2024_3.jpeg",
+    alt: "WHPC 3",
+  },
+  {
+    path: "/images/gallery/world_hospice_and_palliative_care_day_2024_4.jpeg",
+    alt: "WHPC 4",
+  },
+  {
+    path: "/images/gallery/world_hospice_and_palliative_care_day_2024_5.jpeg",
+    alt: "WHPC 5",
+  },
+  {
+    path: "/images/gallery/world_hospice_and_palliative_care_day_2024_6.jpeg",
+    alt: "WHPC 6",
+  },
+  {
+    path: "/images/gallery/world_hospice_and_palliative_care_day_2024_7.jpeg",
+    alt: "WHPC 7",
+  },
+  {
+    path: "/images/gallery/world_hospice_and_palliative_care_day_2024_8.jpeg",
+    alt: "WHPC 8",
+  },
+  {
+    path: "/images/gallery/fellowship_in_palliative_care_nursing.jpeg",
+    alt: "Fellowship in Palliative Care Nursing",
+  },
 ];
 
 export const menuItems = [
