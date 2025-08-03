@@ -3,12 +3,15 @@ export const pkp3FacebookLink =
 export const pkp3Email = "mailto:kerjasama.paliatif@gmail.com";
 export const drLiangYikEmail = "mailto:liangyik@gmail.com";
 
-export const memberFormLink =
-  "https://drive.google.com/file/d/13jdZ8nX-z158dMCnWuUZ8CDXJy_yLnB6/view?usp=sharing";
-export const foundingDocumentLink =
-  "https://drive.google.com/file/d/1UUaiXeL9h33EVlhzWBjVxfhYaJtab_Or/view?usp=sharing";
-export const referralFormLink =
-  "https://drive.google.com/file/d/1msFMhkuIuME5vqWFazjbF-THqb6Mq_xd/view?usp=sharing";
+export const memberFormLink = process.env.NEXT_PUBLIC_MEMBER_URL
+  ? process.env.NEXT_PUBLIC_MEMBER_URL
+  : "https://drive.google.com/file/d/13jdZ8nX-z158dMCnWuUZ8CDXJy_yLnB6/view?usp=sharing";
+export const foundingDocumentLink = process.env.NEXT_PUBLIC_FOUNDING_URL
+  ? process.env.NEXT_PUBLIC_FOUNDING_URL
+  : "https://drive.google.com/file/d/1UUaiXeL9h33EVlhzWBjVxfhYaJtab_Or/view?usp=sharing";
+export const referralFormLink = process.env.NEXT_PUBLIC_REFERRAL_URL
+  ? process.env.NEXT_PUBLIC_REFERRAL_URL
+  : "https://drive.google.com/file/d/1jXaCrmDxo-Jq101ZTHxRgcMDHJm10YGi/view?usp=sharing";
 
 // organization.href === "#" is checked for in the homepage to render it as non-clickable
 export const organizations = [
